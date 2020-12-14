@@ -10,6 +10,7 @@ function App() {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('Todos')
+  const [filterTdos, setFilterTdos] = useState([])
   return (
     <div className="App">
       <header>
@@ -24,6 +25,8 @@ function App() {
         setInputText={setInputText}
         setStatus={setStatus}
         status={status}
+        setFilterTdos={setFilterTdos}
+        filterTdos={filterTdos}
       />
       <TodoList
       setTodos={setTodos}
